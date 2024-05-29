@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <table aria-labelledby="calculator">
+          <tr>
+            <th colspan="4"><input type="text" id="display" placeholder="0" disabled></th>
+          </tr>
+          <tr>
+            <td><button onclick="clearDisplay()" class="span">C</button></td>
+            <td><button onclick="append('+')" class="span">&#43;</button></td>
+            <td><button onclick="append('-')" class="span">&#8722;</button></td>
+            <td><button onclick="backspace()" class="span">DL</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="append('1')">&#49;</button></td>
+            <td><button onclick="append('2')">&#50;</button></td>
+            <td><button onclick="append('3')">&#51;</button></td>
+            <td><button onclick="append('*')" class="span">&#215;</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="append('4')">&#52;</button></td>
+            <td><button onclick="append('5')">&#53;</button></td>
+            <td><button onclick="append('6')">&#54;</button></td>
+            <td><button onclick="percentage()" class="span">&#37;</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="append('7')">&#55;</button></td>
+            <td><button onclick="append('8')">&#56;</button></td>
+            <td><button onclick="append('9')">&#57;</button></td>
+            <td><button onclick="append('/')" class="span">&#247;</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="append('.')">,</button></td>
+            <td><button onclick="append('0')">&#48;</button></td>
+            <td colspan="2"><button onclick="evaluateAmount()" class="evaluate-button">&#61;</button></td>
+          </tr>
+        </table>
+      </main>
+    <script src="script.js"></script>
+</body>
+</html>
