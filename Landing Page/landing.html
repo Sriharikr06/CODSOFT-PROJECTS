@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Toy Store Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-content-div">
+        <a href="#home-sec">
+          <img
+            src="logo1.jpg"
+            alt="Company Logo"
+            id="header-img"
+        /></a>
+        <nav id="nav-bar">
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#products" class="nav-link">PRODUCTS</a>
+          <a href="#our-service" class="nav-link">OUR SERVICE</a>
+          
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home-sec" class="flexible home-sec">
+        <div class="eye-grabber-img">
+          <img src="home.webp" alt="Image of Toys" />
+        </div>
+        <div class="eye-grabber">
+          <h1>Fun, Creative, Exciting.</h1>
+          <h2>
+            Discover a wide range of toys for kids of all ages, sparking imagination and joy.
+          </h2>
+          <button class="btn" onclick="window.location.href = '#contact';">
+            Shop Now
+          </button>
+        </div>
+      </section>
+      <section id="about" class="sec-padding">
+        <h3 class="section-heading">ABOUT US</h3>
+        <div class="sec-content-div flexible">
+          <p>
+            We are passionate about providing high-quality toys that inspire creativity and playfulness in children. Our collection includes toys that are not only entertaining but also educational, fostering learning and development.
+          </p>
+          <img src="front.jpg" alt="Children playing with toys" />
+        </div>
+      </section>
+      <section id="products" class="sec-padding">
+        <h3 class="section-heading">PRODUCTS</h3>
+        <div class="sec-content-div flexible">
+          <div class="tile">
+            <img src="doll.jpg" alt="Photo of dolls" />
+            <h4>Dolls</h4>
+            <p>
+              A variety of dolls for imaginative play, including fashion dolls, baby dolls, and more.
+            </p>
+          </div>
+          <div class="tile">
+            <img src="build.jpg" alt="Photo of Lego bricks" />
+            <h4>Building Blocks</h4>
+            <p>
+              Let your child's creativity flourish with our collection of building blocks and construction sets.
+            </p>
+          </div>
+          <div class="tile">
+            <img src="car.jpg" alt="Photo of toy cars" />
+            <h4>Toy Cars</h4>
+            <p>
+              Zoom into fun with our assortment of toy cars, trucks, and vehicles.
+            </p>
+          </div>
+          <!-- Add more toy categories as needed -->
+        </div>
+      </section>
+      <section id="our-service" class="sec-padding">
+        <h3 class="section-heading">OUR SERVICE</h3>
+        <div class="sec-content-div">
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/w6H542X/Fresh.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Quality</h5>
+              <p>We ensure the highest quality standards for all our toys, providing safe and durable products.</p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/FKNq4Qr/delivered.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Fast Shipping</h5>
+              <p>
+                We offer fast shipping so your child can start enjoying their new toys as soon as possible.
+              </p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/HHQK1wV/happy.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Customer Satisfaction</h5>
+              <p>
+                Your satisfaction is our top priority. If you have any concerns or issues, our customer support team is here to help.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-padding" id="contact">
+        <h3 class="section-heading">CONTACT</h3>
+        <div class="sec-content-div flexible">
+          <h6>To place an order or for inquiries, contact us:</h6>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <input type="submit" class="btn" id="submit" value="Contact Us" />
+          </form>
+        </div>
+      </section>
+    </main>
+    
+  </body>
+</html>
